@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanitiwa - Artiste Visuel et Digital</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 3rem 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .blog-posts {
+            display: flex;
+            justify-content: space-between;
+        }
+        .blog-post {
+            width: 30%;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+        .blog-post h2 {
+            color: #6e8efb;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        footer a {
+            color: #a777e3;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #6e8efb;
+        }
+        .contact-form {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #6e8efb;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #a777e3;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site Kanitiwa</h1>
+    </header>
+
+    <div class="container">
+        <section class="gallery">
+            <img src="image1.jpg" alt="Œuvre 1">
+            <img src="image2.jpg" alt="Œuvre 2">
+            <img src="image3.jpg" alt="Œuvre 3">
+        </section>
+
+        <section class="blog-posts">
+            <article class="blog-post">
+                <h2>L'art digital à l'ère de l'IA</h2>
+                <p>Explorez comment l'intelligence artificielle révolutionne l'art digital et ouvre de nouvelles possibilités créatives.</p>
+            </article>
+            <article class="blog-post">
+                <h2>Mon voyage artistique à Tokyo</h2>
+                <p>Découvrez comment mon récent séjour au Japon a influencé ma dernière série d'œuvres visuelles.</p>
+            </article>
+            <article class="blog-post">
+                <h2>La fusion du réel et du virtuel</h2>
+                <p>Une réflexion sur la manière dont la réalité augmentée transforme notre perception de l'art visuel.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://twitter.com/kanitiwa">Twitter</a> |
+            <a href="https://www.instagram.com/maria.anna.warr">Instagram</a>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre email">
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </footer>
+</body>
+</html>
+
